@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		93F090BD1C515B0D0079EC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090BC1C515B0D0079EC9A /* AppDelegate.swift */; };
-		93F090BF1C515B0D0079EC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090BE1C515B0D0079EC9A /* ViewController.swift */; };
+		93F090BF1C515B0D0079EC9A /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090BE1C515B0D0079EC9A /* ViewControllers.swift */; };
 		93F090C21C515B0D0079EC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F090C01C515B0D0079EC9A /* Main.storyboard */; };
 		93F090C41C515B0D0079EC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F090C31C515B0D0079EC9A /* Assets.xcassets */; };
 		93F090C71C515B0D0079EC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F090C51C515B0D0079EC9A /* LaunchScreen.storyboard */; };
 		93F090D21C515B0D0079EC9A /* DragMeDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090D11C515B0D0079EC9A /* DragMeDownTests.swift */; };
 		93F090DD1C515B0D0079EC9A /* DragMeDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090DC1C515B0D0079EC9A /* DragMeDownUITests.swift */; };
+		93F090EB1C5168E60079EC9A /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090EA1C5168E60079EC9A /* MusicViewController.swift */; };
+		93F090ED1C518A900079EC9A /* Animators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F090EC1C518A900079EC9A /* Animators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		93F090B91C515B0D0079EC9A /* DragMeDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragMeDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F090BC1C515B0D0079EC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93F090BE1C515B0D0079EC9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93F090BE1C515B0D0079EC9A /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		93F090C11C515B0D0079EC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93F090C31C515B0D0079EC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F090C61C515B0D0079EC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		93F090D81C515B0D0079EC9A /* DragMeDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragMeDownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F090DC1C515B0D0079EC9A /* DragMeDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMeDownUITests.swift; sourceTree = "<group>"; };
 		93F090DE1C515B0D0079EC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F090EA1C5168E60079EC9A /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		93F090EC1C518A900079EC9A /* Animators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				93F090BC1C515B0D0079EC9A /* AppDelegate.swift */,
-				93F090BE1C515B0D0079EC9A /* ViewController.swift */,
+				93F090BE1C515B0D0079EC9A /* ViewControllers.swift */,
+				93F090EC1C518A900079EC9A /* Animators.swift */,
 				93F090C01C515B0D0079EC9A /* Main.storyboard */,
 				93F090C31C515B0D0079EC9A /* Assets.xcassets */,
 				93F090C51C515B0D0079EC9A /* LaunchScreen.storyboard */,
 				93F090C81C515B0D0079EC9A /* Info.plist */,
+				93F090EA1C5168E60079EC9A /* MusicViewController.swift */,
 			);
 			path = DragMeDown;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F090BF1C515B0D0079EC9A /* ViewController.swift in Sources */,
+				93F090EB1C5168E60079EC9A /* MusicViewController.swift in Sources */,
+				93F090ED1C518A900079EC9A /* Animators.swift in Sources */,
+				93F090BF1C515B0D0079EC9A /* ViewControllers.swift in Sources */,
 				93F090BD1C515B0D0079EC9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
